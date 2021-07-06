@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from 'react';
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import sanityClient from "../client.js";
 import sphere from "../sphere.svg";
 import cube from "../cube.svg";
@@ -56,14 +56,14 @@ export default function Home() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projectData && projectData.map((project, index) => (
                         <article>
-                            <Link to={project.link} key={project._id}>
+                            <a href={project.link} key={project._id}>
                             <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-pink-400 opacity-75 hover:opacity-100" key={index}>
                                 <img src={project.image.asset.url} alt={project.image.alt} className="w-full h-full rounded-r object-cover absolute" />
                                 <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
                                     <h3 className="text-purple-100 text-lg font-bold py-2 px-2 opacity-90 bg-pink-600 text-pink-50 bg-opactivty-75 rounded">{project.title}</h3>
                                 </span>
                             </span>
-                            </Link>
+                            </a>
                         </article>
                         ))}
                     </div>
