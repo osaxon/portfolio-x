@@ -15,3 +15,10 @@
 .home-name {
   font-size: 130px;
 }
+
+.background-shapes {
+  height: 100%;
+  width: 100%;
+  background-image: url('./shapes_background.svg');
+  background-repeat: no-repeat;
+}

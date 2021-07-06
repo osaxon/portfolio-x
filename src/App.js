@@ -4,7 +4,8 @@ import About from "./components/About";
 import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
+
 
 function App() {
   return (
