@@ -31,7 +31,7 @@ export default function Home() {
 
     return (
         <main className="container mx-auto">
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-32 px-8">
+            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-32 px-8 z-10">
                 <Parallax className="absolute" speed={10} onMove={{x: 10, y:-10}}>
                     <img className="sphere top-96 left-40" src={sphere} alt=""/>
                 </Parallax>
@@ -44,13 +44,13 @@ export default function Home() {
                 <Parallax className="absolute left-10 bottom-40" speed={3} onMove={{x: -5, y:-10}}>
                     <img src={cube} alt=""/>
                 </Parallax>
-                <Parallax className="absolute right-20 md:right-56" speed={-6} onMove={{x: -10, y: -20}}>
+                <Parallax className="absolute" speed={-6} onMove={{x: -10, y: -20}}>
                     <img src={square} alt=""/>
                 </Parallax>
                 
             </section>
             
-                <section className="container mx-auto p-12">
+                <section className="container mx-auto p-12 z-20">
                     <h1 className="text-5xl flex justify-center cursive text-purple-100">Projects</h1>
                     <h2 className="text-lg text-purple-100 flex justify-center mb-12">Some of my work</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
