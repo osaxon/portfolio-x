@@ -1,14 +1,31 @@
 import React from 'react';
-import image from "../shapes_background.svg";
+import sphere from "../sphere.svg";
+import cube from "../cube.svg";
+import square from "../square.svg";
+import Parallax from 'react-rellax';
 
 
 
 export default function Home() {
     return (
-        <main className="container mx-auto">
-            <div alt="" className="absolute object-cover mt-12 mx-8 lg:mx-12 w-full h-full opacity-75 background-shapes"></div>
-            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-                <h1 className="text-lg text-green-200 font-bold cursive leading-none lg:leading-snug home-name">Hi, I'm Oli.</h1>
+        <main className="container mx-auto bg-gray-50">
+            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-32 px-8">
+                <Parallax className="absolute" speed={-1}>
+                    <img className="sphere top-96 left-40" src={sphere} alt=""/>
+                </Parallax>
+                <Parallax className="z-10">
+                    <div className="flex-col w-80">
+                        <h1 className="inflex-flex items-center py-6 px-3 cursive home-name text-gray-800">Full Stack Web Developer</h1>
+                        <h2 className="text-gray-800">Scroll down to see my work! <span>&#128071;</span></h2>
+                    </div>
+                    </Parallax>
+                <Parallax className="absolute md:left-40 top-80" speed={-3}>
+                    <img src={cube} alt=""/>
+                </Parallax>
+                <Parallax className="absolute right-56">
+                    <img src={square} alt=""/>
+                </Parallax>
+                
             </section>
         </main>
     )
