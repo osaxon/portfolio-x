@@ -23,6 +23,7 @@ export default function NavBar() {
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon url="https://github.com/osaxon" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}}/>
+                    <a className="text-purple-100 hover:text-pink-200" href="https://docs.google.com/document/d/e/2PACX-1vRJ4sEpwHsNGa1aiO2EkLiVilmcbWHXAFmI-srckT-Sqdg8OHBIqnEiRjbeq5dR-ZOpMqOszmJPG5m3/pub" target="_blank">Resume</a>
                 </div>
             </div>
         </header>
