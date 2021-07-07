@@ -1,9 +1,9 @@
 import React, { useState, useEffect }  from 'react';
 // import { Link } from "react-router-dom"
 import sanityClient from "../client.js";
-import sphere from "../sphere.svg";
-import cube from "../cube.svg";
-import square from "../square.svg";
+import {ReactComponent as Sphere} from "../sphere.svg";
+import {ReactComponent as Cube} from "../cube.svg";
+import {ReactComponent as Square} from "../square.svg";
 import Parallax from 'react-rellax';
 
 
@@ -33,7 +33,7 @@ export default function Home() {
         <main className="container mx-auto">
             <section className="relative flex justify-center min-h-screen pt-12 lg:pt-32 px-8 z-10">
                 <Parallax className="absolute" speed={6} onMove={{x: 10, y:-10}}>
-                    <img className="sphere top-96 left-40" src={sphere} alt=""/>
+                    <Sphere className="sphere top-96 left-40"/>
                 </Parallax>
                 <Parallax className="z-50" onMove={{x: 10, y:-10}}>
                     <div className="flex-col w-80">
@@ -42,10 +42,10 @@ export default function Home() {
                     </div>
                     </Parallax>
                 <Parallax className="absolute left-10 bottom-40" speed={3} onMove={{x: -5, y:-10}}>
-                    <img src={cube} alt=""/>
+                    <Cube />
                 </Parallax>
                 <Parallax className="absolute z-10" speed={-2} onMove={{x: -10, y: -20}}>
-                    <img src={square} alt=""/>
+                    <Square />
                 </Parallax>
                 
             </section>
